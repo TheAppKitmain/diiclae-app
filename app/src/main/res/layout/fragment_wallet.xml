@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".fragments.WalletFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/wf_userprofile"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_user"
+            android:padding="@dimen/_2sdp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:src="@drawable/app_icon_new"
+            android:padding="@dimen/_4sdp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="50dp"
+            android:text="Wallet"
+            android:gravity="center"
+            android:fontFamily="@font/glacial_bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginStart="@dimen/_35sdp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/wf_gift"
+                android:layout_width="33dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_shopping_new_one" />
+
+            <TextView
+                android:id="@+id/fhg_count"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-9dp"
+                android:layout_marginEnd="-10dp"
+                android:background="@drawable/circlecolor_davincii"
+                android:fontFamily="@font/glacial_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_6sdp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/wf_cart"
+                android:layout_width="35dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_shopping_bag" />
+
+            <TextView
+                android:id="@+id/fh_count"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-9dp"
+                android:layout_marginEnd="-11dp"
+                android:background="@drawable/circlecolor_davincii"
+                android:fontFamily="@font/glacial_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_6sdp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Diiclae Portfolio"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/gray_text_two"
+            android:fontFamily="@font/sppro_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_three_dot_new"
+            app:tint="@color/gray_text_two"
+            android:padding="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_5sdp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:src="@drawable/line_chart"
+        android:scaleType="fitXY"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$195.00"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_30sdp"
+                android:fontFamily="@font/sppro_bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appreciation"
+                    android:fontFamily="@font/sppro_regular"
+                    android:textColor="@color/gray_new"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+277.65%"
+                    android:fontFamily="@font/sppro_medium"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textColor="@color/green"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_10sdp"
+        android:background="@drawable/back_btn"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:backgroundTint="@color/gray_dark"
+        android:paddingHorizontal="@dimen/_18sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/gray_text_two"
+            android:fontFamily="@font/sppro_medium"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 20.98"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sppro_bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Portfolio"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/sppro_bold"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/wl_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:tabGravity="fill"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorColor="@color/gray_new"
+        app:tabIndicatorHeight="@dimen/_1sdp"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/TextAppearance_Color_TabWidget"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/wl_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginBottom="@dimen/_80sdp" />
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

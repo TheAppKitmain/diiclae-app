@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_light"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_36sdp"
+            android:fontFamily="@font/glacial_bold"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_12sdp"
+            android:text="Add New Address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/ana_back"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacial_regular"
+                    android:text="Contact Details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+                <EditText
+                    android:id="@+id/ana_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:backgroundTint="#3BFFFFFF"
+                    android:background="@drawable/edit_text_bg"
+                    android:fontFamily="@font/glacial_regular"
+                    android:inputType="text"
+                    android:hint="Full Name"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+                <EditText
+                    android:id="@+id/ana_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:backgroundTint="#3BFFFFFF"
+                    android:background="@drawable/edit_text_bg"
+                    android:fontFamily="@font/glacial_regular"
+                    android:inputType="phone"
+                    android:hint="Phone Number"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:maxLength="11"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/glacial_regular"
+                    android:text="address"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+                <EditText
+                    android:id="@+id/ana_address_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:backgroundTint="#3BFFFFFF"
+                    android:background="@drawable/edit_text_bg"
+                    android:fontFamily="@font/glacial_regular"
+                    android:inputType="text"
+                    android:hint="Address Line 1"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+                <EditText
+                    android:id="@+id/ana_address_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:backgroundTint="#3BFFFFFF"
+                    android:background="@drawable/edit_text_bg"
+                    android:fontFamily="@font/glacial_regular"
+                    android:inputType="text"
+                    android:hint="Address Line 2"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+                <EditText
+                    android:id="@+id/ana_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:backgroundTint="#3BFFFFFF"
+                    android:background="@drawable/edit_text_bg"
+                    android:fontFamily="@font/glacial_regular"
+                    android:inputType="text"
+                    android:hint="City"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+                <EditText
+                    android:id="@+id/ana_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:backgroundTint="#3BFFFFFF"
+                    android:background="@drawable/edit_text_bg"
+                    android:fontFamily="@font/glacial_regular"
+                    android:inputType="text"
+                    android:hint="State/Province/Region"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+                <EditText
+                    android:id="@+id/ana_zipcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:backgroundTint="#3BFFFFFF"
+                    android:background="@drawable/edit_text_bg"
+                    android:fontFamily="@font/glacial_regular"
+                    android:inputType="text"
+                    android:hint="Zip"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:maxLength="8"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+                <EditText
+                    android:id="@+id/ana_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:backgroundTint="#3BFFFFFF"
+                    android:background="@drawable/edit_text_bg"
+                    android:fontFamily="@font/glacial_regular"
+                    android:inputType="text"
+                    android:hint="Country"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+
+
+
+                </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/ana_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_12sdp"
+        android:background="@drawable/back_btn"
+        android:fontFamily="@font/glacial_regular"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="Save"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+</LinearLayout>

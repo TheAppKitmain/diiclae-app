@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/back_row_credit_debit"
+    android:layout_margin="@dimen/_20sdp"
+    android:padding="@dimen/_20sdp"
+    android:elevation="@dimen/_5sdp">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:fontFamily="@font/glacial_bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oh no! You're leaving... Are you sure?"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/glacial_regular"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_50sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20sdp">
+        <TextView
+            android:id="@+id/di_nobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Naah, Just Kidding"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/back_btn"
+            android:paddingVertical="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/di_yesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yes, Log Me Out"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/back_btn"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_5sdp"/>
+    </LinearLayout>
+</LinearLayout>

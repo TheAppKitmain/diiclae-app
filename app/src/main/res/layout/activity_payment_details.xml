@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pd_back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/ic_back_long_arrow"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_36sdp"
+            android:fontFamily="@font/glacial_bold"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/payment_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_regular"
+            android:text="@string/payment_methods"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            android:background="@drawable/back_paymentdetail"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="84dp"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_marginHorizontal="@dimen/_10sdp"-->
+<!--                android:layout_marginVertical="@dimen/_20sdp"-->
+<!--                android:src="@drawable/ic_applepay" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/glacial_regular"-->
+<!--                android:gravity="start"-->
+<!--                android:text="@string/apple_pay"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_12sdp" />-->
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/pd_payPalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/back_paymentdetail"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_height="42dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:src="@drawable/ic_paypal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/glacial_regular"
+                android:gravity="start"
+                android:text="@string/paypal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            android:background="@drawable/back_card_payment"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="83dp"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:layout_marginHorizontal="@dimen/_10sdp"-->
+<!--                android:layout_marginVertical="@dimen/_15sdp"-->
+<!--                android:src="@drawable/ic_cards" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/glacial_regular"-->
+<!--                android:gravity="start"-->
+<!--                android:text="@string/credit_or_debit_card"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="@dimen/_12sdp" />-->
+
+<!--        </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sppro_medium"
+                android:gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:text="IPO Shares"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/st_theme_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_right"
+                android:thumb="@drawable/thumb_selector"
+                app:track="@drawable/track_selector"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_text"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sppro_medium"
+            android:text="Split ownership of the artwork into 1000 Shares, Must be verified!"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shares Symbol"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sppro_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:backgroundTint="@color/gray_text"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/gray_text"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:fontFamily="@font/sppro_medium"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sppro_medium"
+                android:gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:text="Share Price"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/glacial_regular"
+                    android:gravity="end"
+                    android:padding="@dimen/_5sdp"
+                    android:text="$5 / Share"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_text"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sppro_medium"
+                android:gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:text="Schedule IPO (Initial Public Offering)"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_right"
+                android:thumb="@drawable/thumb_selector"
+                app:track="@drawable/track_selector"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_text"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sppro_medium"
+            android:text="Artwork &amp; Shares will be live to the market on your schedule time on your time and date"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

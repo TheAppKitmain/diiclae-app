@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".activities.uploadscreens.UploadOne">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_4sdp">
+
+        <ImageView
+            android:id="@+id/upd_back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/ic_cross"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/upl_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/sppro_medium"
+            android:gravity="end"
+            android:padding="@dimen/_5sdp"
+            android:text="Continue"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/upl_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_text"
+            android:text="@string/delete"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/sppro_medium"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Save &amp; Exit"
+            android:textSize="@dimen/_13sdp"
+            android:background="@drawable/back_btn"
+            android:backgroundTint="@color/gray_dark_two"
+            android:fontFamily="@font/sppro_medium"
+            android:paddingVertical="@dimen/_4sdp"
+            android:paddingHorizontal="@dimen/_10sdp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

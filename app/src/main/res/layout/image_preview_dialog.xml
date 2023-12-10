@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_6sdp"
+    android:background="@color/black"
+    app:cardBackgroundColor="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:gravity="end"
+            android:background="@color/blue_light">
+
+            <ImageView
+                android:id="@+id/ipd_close"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:elevation="@dimen/_2sdp"
+                android:src="@drawable/ic_close"
+                android:padding="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_240sdp">
+
+            <ImageView
+                android:id="@+id/ipd_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ipd_video"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:elevation="@dimen/_12sdp"
+                android:src="@android:drawable/ic_media_play"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/ipd_image"
+                app:layout_constraintEnd_toEndOf="@+id/ipd_image"
+                app:layout_constraintStart_toStartOf="@+id/ipd_image"
+                app:layout_constraintTop_toTopOf="@+id/ipd_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/ipd_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_regular"
+            android:maxLength="50"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/ipd_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="150"
+            android:fontFamily="@font/glacial_regular"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"/>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ipd_delete"-->
+<!--            android:layout_width="@dimen/_80sdp"-->
+<!--            android:layout_height="@dimen/_36sdp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="@dimen/_8sdp"-->
+<!--            android:src="@drawable/black_delete"-->
+<!--            app:tint="@color/colorWhite" />-->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:background="@drawable/back_home"
+    android:layout_margin="@dimen/_10sdp"
+    android:elevation="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_20sdp">
+
+    <RelativeLayout
+        android:id="@+id/rl_shodw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/_16sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp">
+
+            <LinearLayout
+                android:id="@+id/cd_portraitLay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_260sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/image_king"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/cd_portraitImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginBottom="26dp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cd_saquareLay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/canvas_one"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/cd_sqrImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginEnd="0.2dp"
+                    android:layout_marginBottom="@dimen/_19sdp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cd_landscapLay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_154sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/canvas_one"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/cd_landScapeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/cd_canvasName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Multicolored Lion portrait"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/glacial_bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/cd_canvasDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="This is a digital painting to celebrate our king Chagdwich Boseman...more"
+            android:textSize="@dimen/_12sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:fontFamily="@font/glacial_regular"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+<LinearLayout
+    android:id="@+id/cd_commentLayout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/cd_commentCount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+       android:text="1244"
+        android:textSize="@dimen/_12ssp"
+        android:gravity="center"
+        android:fontFamily="@font/glacial_bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="Comments"
+        android:gravity="center"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/glacial_regular"/>
+</LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cd_likeLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/cd_likeCount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="223"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:fontFamily="@font/glacial_bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Likes"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/glacial_regular"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/cd_viewCount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="45"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/glacial_bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Views"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/glacial_regular"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

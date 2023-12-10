@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "760004908525",
+    "firebase_url": "https://davincii-studio-default-rtdb.firebaseio.com",
+    "project_id": "davincii-studio",
+    "storage_bucket": "davincii-studio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760004908525:android:2b447aa9093aa8a152c3e4",
+        "android_client_info": {
+          "package_name": "com.online.davincii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760004908525-ru01plr9hj0df59dl3np3vtkdeu41uk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.online.davincii",
+            "certificate_hash": "63045c9d00c061edbe53e303553122ba7081dfe2"
+          }
+        },
+        {
+          "client_id": "760004908525-c95rjnb29s15srmib6af4n1nsta8lnpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9jje7KL8mz1KJzjLYmf4TTaBEeia5V1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760004908525-c95rjnb29s15srmib6af4n1nsta8lnpm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "760004908525-qjon2291aci03paajvune3do084gc1vi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.davincii"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

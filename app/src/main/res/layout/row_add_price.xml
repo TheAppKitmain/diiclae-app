@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/_6sdp">
+
+    <TextView
+        android:id="@+id/rp_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="16*20"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:padding="@dimen/_4sdp"
+        android:gravity="center"
+        android:background="@drawable/sizes_bg"/>
+
+    <EditText
+        android:id="@+id/rp_addPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:padding="@dimen/_4sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:inputType="numberDecimal"
+        android:hint="Add price"
+        android:textColorHint="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Davincii.default" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_700</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+        <!-- Customize your theme here. -->
+
+        <item name="screens_bg">@color/white</item>
+
+    </style>
+
+
+    <style name="Theme.Davincii.Dark" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="screens_bg">@color/black</item>
+
+
+
+    </style>
+
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="AppDefaultTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/purple_700</item>
+    </style>
+
+    <style name="TextAppearance_Color_TabWidget" parent="Widget.MaterialComponents.TabLayout">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">normal</item>
+    <item name="fontFamily">@font/glacial_regular</item>
+    <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_12sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_12sdp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="progressDialogStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/blue_light</item>
+    </style>
+
+    <style name="ScaleFromCenter">
+        <item name="android:windowEnterAnimation">@anim/scale_from_center</item>
+        <item name="android:windowExitAnimation">@anim/collapse_to_center</item>
+    </style>
+
+    <style name="CustomPopUpStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:itemBackground">@color/black</item>
+    </style>
+
+    <style name="CornerCut" parent="">
+    <item name="cornerFamilyTopLeft">rounded</item>
+    <item name="cornerFamilyTopRight">rounded</item>
+    <item name="cornerFamilyBottomLeft">rounded</item>
+    <item name="cornerFamilyBottomRight">rounded</item>
+    <item name="cornerSizeTopLeft">20%</item>
+    <item name="cornerSizeTopRight">20%</item>
+    <item name="cornerSizeBottomLeft">20%</item>
+        <item name="cornerSizeBottomRight">20%</item>
+    </style>
+
+
+</resources>

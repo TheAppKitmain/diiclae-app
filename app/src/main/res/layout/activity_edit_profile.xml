@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/top_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:visibility="gone">
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/ep_backbtn"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:padding="@dimen/_5sdp"-->
+<!--                            android:src="@drawable/ic_back_long_arrow"-->
+<!--                            app:tint="@color/black" />-->
+
+                        <TextView
+                            android:id="@+id/ep_headername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/glacial_bold"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <ImageView
+                            android:id="@+id/ep_setting"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/ic_group"
+                            app:tint="@color/black" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/black">
+
+
+
+                        <ImageView
+                            android:id="@+id/ep_imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_200sdp"
+                            android:scaleType="fitXY"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ep_editbtn_one"
+                            android:layout_width="46dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="12dp"
+                            android:onClick="studioimgBtnClick"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/edit_btn"
+                            android:layout_margin="@dimen/_10sdp"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintVertical_bias="1.0" />
+
+
+                        <ImageView
+                            android:id="@+id/ep_backbtn"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/new_back" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_img"
+                    android:layout_marginTop="220dp"
+                    android:background="@drawable/profile_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_70sdp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="First name"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/white"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/glacial_regular"/>
+
+                                <EditText
+                                    android:id="@+id/ep_firstname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_36sdp"
+                                    android:fontFamily="@font/glacial_regular"
+                                    android:hint="First Name"
+                                    android:backgroundTint="#3BFFFFFF"
+                                    android:inputType="textCapSentences"
+                                    android:padding="@dimen/_10sdp"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Last name"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/glacial_regular"/>
+
+                            <EditText
+                                android:id="@+id/ep_lastname"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_36sdp"
+                                android:fontFamily="@font/glacial_regular"
+                                android:hint="Last Name"
+                                android:backgroundTint="#3BFFFFFF"
+                                android:inputType="textCapSentences"
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            >
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Username"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/glacial_regular"/>
+
+
+                            <EditText
+                            android:id="@+id/ep_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_36sdp"
+                            android:backgroundTint="#3BFFFFFF"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/glacial_regular"
+                            android:hint="User Name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="@dimen/_12sdp">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Bio"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/glacial_regular"/>
+
+                            <EditText
+                            android:id="@+id/ep_bio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#3BFFFFFF"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/glacial_regular"
+                            android:gravity="top"
+                            android:hint="Bio"
+                            android:maxLength="250"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="@dimen/_12sdp">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Link"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/glacial_regular"/>
+
+
+                            <EditText
+                            android:id="@+id/ep_link"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_36sdp"
+                            android:backgroundTint="#3BFFFFFF"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/glacial_regular"
+                            android:hint="Link"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:textColor="@color/link_color"
+                            android:textColorHint="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:fontFamily="@font/glacial_regular"
+                            android:text="Categories"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/ep_catRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_3sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:fontFamily="@font/glacial_regular"
+                            android:text="Style"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/ep_styleRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_20sdp" />
+
+                        <TextView
+                            android:id="@+id/ep_savebtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_40sdp"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            android:background="@drawable/back_btn"
+                            android:gravity="center"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:text="Save"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.15">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ep_profile_image"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/demo_image"
+                        app:civ_border_color="@color/black"
+                        app:civ_border_width="@dimen/_2sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.429"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ep_editbtn_two"
+                        android:layout_width="46dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="12dp"
+                        android:onClick="imgBtnClick"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/edit_btn"
+                        app:layout_constraintBottom_toBottomOf="@+id/ep_profile_image"
+                        app:layout_constraintEnd_toEndOf="@+id/ep_profile_image"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/ep_profile_image"
+                        app:layout_constraintTop_toTopOf="@+id/ep_profile_image"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

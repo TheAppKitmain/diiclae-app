@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".fragments.DiscoverFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_12sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/db_userprofile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/_2sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_user"
+            android:layout_marginBottom="@dimen/_2sdp" />
+
+        <TextView
+            android:id="@+id/dc_fg_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:backgroundTint="@color/gray_dark"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableTint="@color/gray_text_color"
+            android:drawablePadding="@dimen/_7sdp"
+            android:elevation="@dimen/_3sdp"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/glacial_regular"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:textColorHint="@color/gray_text_color"
+            android:iconifiedByDefault="true"
+            android:padding="@dimen/_8sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <FrameLayout
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginStart="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/dc_fg_cart_Img"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:src="@drawable/ic_shopping_bag" />
+
+            <TextView
+                android:id="@+id/fd_count"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="-9dp"
+                android:background="@drawable/circlecolor_davincii"
+                android:fontFamily="@font/glacial_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_6sdp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/colorView"
+        android:visibility="gone"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/glacial_bold"
+                android:paddingStart="@dimen/_15sdp"
+                android:visibility="gone"
+                android:text="Featured Artist"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dc_fg_rv_featArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:paddingStart="@dimen/_9sdp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/ab_challange"
+                android:scaleType="fitXY"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dc_ct_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:paddingStart="@dimen/_9sdp"
+                tools:listitem="@layout/row_discovery_category"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                android:layout_marginVertical="@dimen/_2sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorView"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/glacial_bold"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:text="Explore"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/dc_fg_seeAll_txtone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/glacial_regular"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:text="See all"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dc_fg_rv_artforu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:layout_gravity="center" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/glacial_bold"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:text="Top Artists"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/dc_fgseeAll_txtwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/glacial_regular"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:text="See all"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dc_fg_rv_topstudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/glacial_bold"
+                android:paddingStart="@dimen/_20sdp"
+                android:text="Top Ten"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dc_fg_rv_toptenPc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_4sdp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/glacial_bold"
+                android:paddingStart="@dimen/_20sdp"
+                android:text="Loved"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dc_fg_rv_rectLoved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_4sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/glacial_bold"
+                android:paddingStart="@dimen/_20sdp"
+                android:text="Saved"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dc_fg_rv_comicArt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_4sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/glacial_bold"
+                android:paddingStart="@dimen/_20sdp"
+                android:text="Cultured Art"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dc_fg_rv_cultArt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_80sdp"
+                android:paddingStart="@dimen/_4sdp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_4sdp">
+
+        <ImageView
+            android:id="@+id/upd_back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/ic_cross"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/upd_addPiece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/glacial_regular"
+            android:gravity="end"
+            android:padding="@dimen/_5sdp"
+            android:text="Continue"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/_2sdp">
+
+                    <ImageView
+                        android:id="@+id/upd_square"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_200sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ab_challange"
+                        android:visibility="gone"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/upd_portrait"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_200sdp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ab_challange"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/upd_landscape"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_140sdp"
+                        android:scaleType="fitXY"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/upd_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/glacial_regular"
+                        android:hint="Write Title"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <EditText
+                        android:id="@+id/upd_writeState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/glacial_regular"
+                        android:gravity="start|top"
+                        android:hint="Write Artist Statements"
+                        android:inputType="textMultiLine"
+                        android:maxLength="150"
+                        android:maxLines="4"
+                        android:minLines="4"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/upd_categ_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="@font/glacial_regular"
+                    android:gravity="center_vertical"
+                    android:text="Select one category"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/upd_rv_categOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/upd_categ_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="@font/glacial_regular"
+                    android:gravity="center_vertical"
+                    android:text="Select one style"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/upd_rv_categTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10sdp" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/glacial_regular"
+                        android:gravity="center_vertical"
+                        android:text="Prices "
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/glacial_regular"
+                        android:gravity="center_vertical"
+                        android:text="(You can edit price)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/upd_edit"-->
+<!--                        android:layout_width="@dimen/_24sdp"-->
+<!--                        android:layout_height="@dimen/_24sdp"-->
+<!--                        android:fontFamily="@font/glacial_regular"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:src="@drawable/edit_btn"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"/>-->
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/upd_rv_sizes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <CheckBox
+                    android:id="@+id/up_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I declare that this is an original artwork. I understand that no plagiarism is allowed and that the artwork and account can be removed id detected. I also understand that my artwork and profile and profile may be used for promotional purpose by Diiclae."
+                    android:buttonTint="@color/white"
+                    android:gravity="top|center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/upd_addHastag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/glacial_regular"
+                android:text="Add up to 3 hashtags"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <com.online.davincii.utils.HashTagEditText
+                android:id="@+id/upd_EditHashTag"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/back_upload_one"
+                android:gravity="start|top"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

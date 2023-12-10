@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.online.davincii"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 14
+        versionName "1.1.2"
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+// Jks file path /app/keystore
+// Keystore Alis : davinchii
+// KeyStore Password :  Emortancity1995
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //TODO network communication libraries (API implementation)
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.8.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.8.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    //TODO Design, material and view size libraries
+    implementation 'com.android.support:design:32.0.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.fxn769:pix:1.5.3'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    implementation 'com.hootsuite.android:nachos:1.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // TODO s3 Bucket media upload
+    implementation 'com.amazonaws:aws-android-sdk-mobile-client:2.16.7'
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.9.1'
+    implementation 'com.amazonaws:aws-android-sdk-cognito:2.9.1'
+
+    //country code picker
+    implementation 'com.hbb20:ccp:2.4.5'
+    implementation 'com.google.android:flexbox:2.0.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.google.firebase:firebase-core:18.0.2'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+
+    //for emoticons send in chat
+    implementation 'com.vanniktech:emoji-google:0.6.0'
+    implementation 'com.vanniktech:emoji-ios:0.6.0'
+
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+
+    implementation 'com.braintreepayments.api:drop-in:4.6.0'
+    //implementation 'com.braintreepayments.api:drop-in:6.6.0'
+
+
+    implementation platform('com.google.firebase:firebase-bom:28.1.0')
+
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+
+
+}

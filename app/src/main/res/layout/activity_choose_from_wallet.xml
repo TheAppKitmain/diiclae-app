@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".activities.GiftActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_4sdp">
+
+        <ImageView
+            android:id="@+id/cfg_back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_back_new"
+            app:tint="@color/white" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/glacial_bold"
+        android:gravity="end"
+        android:padding="@dimen/_5sdp"
+        android:text="Choose From Wallet"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cfw_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/row_from_wallet"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        android:layout_marginHorizontal="@dimen/_5sdp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

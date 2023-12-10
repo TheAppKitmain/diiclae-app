@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical"
+    android:backgroundTint="@color/black_dull">
+
+
+    <ImageView
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_3sdp"
+        android:background="@drawable/back_btn"
+        android:backgroundTint="@color/gray_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/edit_text_bg"
+        android:backgroundTint="@color/gray_dark_two"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:hint="search user or enter email"
+        android:textColorHint="@color/gray_text_two"
+        android:fontFamily="@font/glacial_regular"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_dark"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gus_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:listitem="@layout/row_gift_user"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

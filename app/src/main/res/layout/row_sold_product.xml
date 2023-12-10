@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rsp_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:fontFamily="@font/glacial_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/rsp_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:fontFamily="@font/glacial_regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/rsp_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:fontFamily="@font/glacial_regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rsp_shodw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:clipToPadding="false"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/rsp_portraitLay"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:background="@drawable/canvas_two"
+                        android:visibility="gone"
+                        android:layout_marginVertical="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/rsp_portraitImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="0.1dp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:scaleType="fitXY"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rsp_saquareLay"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/canvas_one"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/rsp_squareImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginBottom="9dp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rsp_landscapLay"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/canvas_one"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/rsp_landscapeImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    android:background="@color/black"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <View
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#B5B5B5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_bold"
+            android:gravity="center"
+            android:paddingTop="@dimen/_2sdp"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#C6C6C6"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/aib_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/_8sdp"
+            android:paddingHorizontal="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_photo_camera"
+                app:tint="@color/grey"
+                android:padding="@dimen/_4sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/glacial_bold"
+                android:text="Image"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#C6C6C6"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+</LinearLayout>
