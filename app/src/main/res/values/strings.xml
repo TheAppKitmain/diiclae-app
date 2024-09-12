@@ -74,15 +74,13 @@
     <string name="reply">Reply</string>
     <string name="message">Message</string>
     <string name="no_artwork_in_this_studio_yet">No Artwork In This Studio Yet</string>
-<!--    <string name="aws_kay">AKIA346TK5MNUBKC6SFP</string>-->
-<!--    <string name="hidden_kay">4DB/6XZCFEIlTc96B2a4dSnqOAcb7louxqFYoGWj</string>-->
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="delete"><u>Delete</u></string>
     <string name="art_bio">Hay i appreciate how are you ok please let me know i would love to show you around, let me know if theres anything i can do, can you call me when you get there because.... <b><font fgcolor='#ffffff'>Read More</font></b></string>
 
-    <!--    <string name="aws_kay">AKIA6M4YMEOAOV5ADOK4</string>-->
-    <!--    <string name="hidden_kay">1SL9vE/tbtbnC7zn5j7tnpZ9SBHliNX57C7pIt0g</string>-->
+
 
 
 </resources>
