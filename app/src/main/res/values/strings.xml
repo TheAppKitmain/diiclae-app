@@ -47,6 +47,7 @@
     <string name="supporting">Supporting</string>
     <string name="john__deo">johndeo</string>
     <!-- TabLayout Tabs Name-->
+
     <string name="tabnameone">UP_CreationFragment</string>
     <string name="tabnametwo">UP_CollectionFragment</string>
     <string name="settings">Settings</string>
